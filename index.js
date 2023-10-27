@@ -1,16 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
-
-/* 
-  Add your pseudocode here
-*/
-
-/*
-  Add written explanation of your solution here
-*/
-
-// You can run `node index.js` to view these console logs
+    // Write your algorithm here
+      function stringReverse(string){
+        return string.split('').reverse().join('');
+    }
+    const input = `robot`
+    const reversedString=stringReverse(input) 
+  
+    function reverseChecker(){
+        if(input===reversedString){
+            console.log(true)
+        }
+        else(console.log(false))
+    }
+    reverseChecker()
+  }
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
